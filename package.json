@@ -16,5 +16,17 @@
   "devDependencies": {
     "supertest": "^7.1.0",
     "vitest": "^3.1.1"
-  }
+  },
+  "version": "1.0.0",
+  "description": "The organization is pleased with your work in creating the proof-of-concept employee-management API.\r Take your work to the next level by adding middleware and organizing your endpoints into routers!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatalieChurch/Block-32-Workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatalieChurch/Block-32-Workshop/issues"
+  },
+  "homepage": "https://github.com/NatalieChurch/Block-32-Workshop#readme"
 }
