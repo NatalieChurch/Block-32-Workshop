@@ -27,16 +27,20 @@ router.get("/:id", (req, res) => {
 
 
 router.post("/", (req, res) => {
-  const {name} = req.body;
-  if (!name || typeof name !== "string") {
-    return res.status(400).send("Invalid or missing 'name");
+  if (!req.body || typeof req.body !== "object") {
+    return res.status(400).send("Request body is required");
   }
 
+  const { name } = req.body;
+  if (!name || typeof name !== "string") {
+    return res.status(400).send("Invalid or missing 'name'");
+  }
 
   const newEmployee = {
     id: employees.length ? employees[employees.length - 1].id + 1 : 1,
-    name, 
+    name,
   };
+
   employees.push(newEmployee);
   res.status(201).send(newEmployee);
 });

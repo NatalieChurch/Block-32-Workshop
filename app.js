@@ -1,5 +1,5 @@
 import express from "express";
-import router from "./routes/employees.js";
+import employeesRouter from "./routes/employees.js";
 
 
 
